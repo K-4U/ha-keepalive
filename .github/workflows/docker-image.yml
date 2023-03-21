@@ -22,8 +22,8 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile --tag ghcr.io/K-4U/ha-keepalive:latest
-        docker run ghcr.io/K-4U/ha-keepalive:latest
-        docker push ghcr.io/K-4U/ha-keepalive:latest
+        docker build . --file Dockerfile --tag ghcr.io/k-4u/ha-keepalive:latest
+        docker run ghcr.io/k-4u/ha-keepalive:latest
+        docker push ghcr.io/k-4u/ha-keepalive:latest
         
       
