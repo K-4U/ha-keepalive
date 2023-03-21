@@ -23,7 +23,6 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile --tag ghcr.io/k-4u/ha-keepalive:latest
-        docker run ghcr.io/k-4u/ha-keepalive:latest
         docker push ghcr.io/k-4u/ha-keepalive:latest
         
       
