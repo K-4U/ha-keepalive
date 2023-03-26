@@ -17,7 +17,7 @@ server = {
     "port": os.getenv('LISTEN_PORT', 8001)
 }
 ha_ip = os.environ['HA_IP']
-ha_port = os.getenv('HA_PORT', 8123)
+ha_port = int(os.getenv('HA_PORT', 8123))
 kuma_monitor_name = os.environ['MONITOR_NAME']
 
 
